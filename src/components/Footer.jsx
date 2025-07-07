@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-border mt-8 pt-6 text-center flex flex-col items-center">
+        <div className="border-t border-border mt-8 pt-6 text-center flex flex-col items-center relative">
           <p className="text-sm text-gray-600">
             © {currentYear}{" "}
               Syed Sameer
@@ -77,6 +77,10 @@ const Footer = () => {
           <p className="text-xs text-gray-600 mt-1">
             Built with React, Tailwind CSS, and ❤️
           </p>
+          {/* Version at bottom right */}
+          <span className="absolute right-4 bottom-2 text-xs text-gray-400 select-none">
+            v1.0.0
+          </span>
         </div>
       </div>
     </footer>
