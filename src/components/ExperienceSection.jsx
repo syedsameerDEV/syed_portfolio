@@ -20,7 +20,7 @@ const ExperienceSection = () => {
       company: "NIELIT Chennai",
       logo: "/svg/NIELIT-Logo.png",
       position: "Frontend Developer",
-      startDate: "july 2023",
+      startDate: "Jul 2023",
       endDate: "Present",
     },
     {
@@ -28,16 +28,16 @@ const ExperienceSection = () => {
       company: "saaSForest",
       logo: "/svg/saaslogo.svg",
       position: "Frontend Developer",
-      startDate: "Mar 2021",
-      endDate: "Sep 2023",
+      startDate: "Dec 2022",
+      endDate: "Jun 2023",
     },
     {
       id: 3,
       company: "8Queens Software Technologies Private Limited ",
       logo: "/svg/8_queensLogo.webp",
       position: "Software Engineer (Intern)",
-      startDate: "Oct 2018",
-      endDate: "Feb 2021",
+      startDate: "Jul 2022",
+      endDate: "Dec 2022",
     },
   ];
 
@@ -46,7 +46,10 @@ const ExperienceSection = () => {
       <h2 className="text-xl font-semibold text-left mb-3">Experience</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-none lg:flex lg:flex-wrap mb-8">
         {experiences.map((experience) => (
-          <div key={experience.id} className="rounded-2xl w-full lg:w-52 border bg-card p-4">
+          <div
+            key={experience.id}
+            className="rounded-2xl w-full lg:w-52 border bg-card p-4"
+          >
             <div className="pb-0 text-sm">
               <img
                 src={experience.logo}
@@ -71,4 +74,4 @@ const ExperienceSection = () => {
   );
 };
 
-export default ExperienceSection; 
+export default ExperienceSection;
